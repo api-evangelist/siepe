@@ -1,17 +1,34 @@
 aid: siepe
 name: Siepe
-description: 'Siepe is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: 'Siepe is a Dallas, Texas fintech providing cloud-based software and technology-enabled
+  services for private credit, CLO and alternative investment managers. Its front-to-back platform
+  spans portfolio management, operations and accounting, collateral administration, compliance and
+  legal, middle-office services, data extraction and a centralized data-management warehouse that
+  normalizes borrower, lender, agent-bank and investor feeds into one real-time view. Siepe also
+  operates managed technology and public-cloud services for asset managers. The company raised a
+  $30M Series B led by WestCap in 2024 and holds SOC 2 Type II certification. Siepe publishes no
+  public developer program: connectivity is delivered as bilateral, managed integrations (for
+  example its 2026 Order Management System integration with Octaura for syndicated loan and CLO
+  trading) rather than as a self-serve, documented public API.'
+image: https://www.siepe.com/wp-content/uploads/2020/08/Siepe-Logo.png
 url: https://raw.githubusercontent.com/api-evangelist/siepe/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
 specificationVersion: '0.20'
 created: '2026-08-27'
 modified: '2026-08-27'
 tags:
 - Company
+- Financial Services
+- Private Credit
+- CLO
+- Alternative Investments
+- Portfolio Management
+- Data Management
+- Fund Administration
+- Middle Office
+- Managed Services
+- Fintech
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +36,63 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: Conformance
+  url: conformance/siepe-conformance.yml
+- type: Compliance
+  url: conformance/siepe-conformance.yml
+- type: WellKnownProbe
+  url: well-known/siepe-well-known.yml
+- type: LLMsTxt
+  url: llms/siepe-llms.txt
+- type: Plans
+  url: plans/siepe-plans-pricing.yml
+- type: RateLimits
+  url: rate-limits/siepe-rate-limits.yml
+- type: DomainSecurity
+  url: security/siepe-domain-security.yml
 - type: Website
-  url: https://www.nasdaqprivatemarket.com/
+  url: https://www.siepe.com/
+- type: About
+  url: https://www.siepe.com/company/about-us/
+- type: Support
+  url: https://www.siepe.com/contact/
+- type: Blog
+  url: https://www.siepe.com/category/blog/
+- type: Insights
+  url: https://www.siepe.com/insights/
+- type: Press
+  url: https://www.siepe.com/company/company-press/
+- type: CaseStudies
+  url: https://www.siepe.com/case-studies/
+- type: TermsOfService
+  url: https://www.siepe.com/terms-of-use-2022-1
+- type: PrivacyPolicy
+  url: https://www.siepe.com/privacy-policy/
+- type: GitHubOrganization
+  url: https://github.com/Siepe
+- type: LinkedIn
+  url: https://www.linkedin.com/company/siepe/
+x-enrichment:
+  date: '2026-08-27'
+  status: minimal
+  artifacts_added: 6
+  pass: local-v1
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: >-
+    Siepe sells software and managed services to private credit and CLO managers but ships no
+    developer program at all — the word "API" appears nowhere on siepe.com, none of
+    api./docs./developer./developers./portal./connect.siepe.com resolve in DNS, all 654 sitemap
+    URLs were walked with no reference or spec page, and connectivity is delivered as bilateral
+    managed integrations (its Octaura OMS link-up) negotiated through the contact form.
+  evidence:
+  - url: https://www.siepe.com/sitemap_index.xml
+    status: 200
+  - url: https://www.siepe.com/openapi.json
+    status: 404
+  - url: https://www.siepe.com/.well-known/agent-card.json
+    status: 404
+  - url: https://www.siepe.com/llms.txt
+    status: 404
+  checked: '2026-08-27'

@@ -1,0 +1,70 @@
+# Siepe
+
+> Siepe is a Dallas, Texas fintech providing cloud-based software and technology-enabled services
+> for private credit, CLO and alternative investment managers. Its front-to-back platform spans
+> portfolio management, operations and accounting, collateral administration, compliance and legal,
+> middle-office services, data extraction, and a centralized data-management warehouse that
+> normalizes borrower, lender, agent-bank and investor feeds into one real-time view.
+
+## Agent-relevant summary
+
+Siepe publishes **no public API**. As of 2026-08-27 there is no developer portal, no API reference,
+no OpenAPI/AsyncAPI/GraphQL/gRPC/SOAP contract, no MCP server, and no A2A agent card anywhere on
+Siepe's public surface. `api.siepe.com`, `docs.siepe.com`, `developer.siepe.com`, `developers.siepe.com`,
+`portal.siepe.com` and `connect.siepe.com` do not resolve in DNS. Every `/.well-known/` path on
+`www.siepe.com` returns 404.
+
+Connectivity is delivered as **bilateral, managed integrations** negotiated through sales — for
+example Siepe's 2026 Order Management System integration with Octaura for syndicated loan and CLO
+trading, and its risk-analytics partnership with Qontigo. An agent cannot self-serve onboard, obtain
+a credential, or call Siepe programmatically from public material. The correct action for an agent
+asked to integrate with Siepe is to route the request to https://www.siepe.com/contact/.
+
+The only machine-readable endpoint Siepe serves publicly is the WordPress REST API of its marketing
+site at `https://www.siepe.com/wp-json/` (326 routes, `wp/v2` and plugin namespaces). That is the CMS
+behind siepe.com, not a Siepe product API, and it is not catalogued as one.
+
+## Solutions
+
+- [Solutions overview](https://www.siepe.com/solutions/): the front-to-back product suite.
+- [Portfolio Management](https://www.siepe.com/solutions/portfolio-management/): position, P&L and portfolio analytics for credit managers.
+- [Data Management](https://www.siepe.com/solutions/data-management/): centralized warehouse, security reference data, market data, price master hierarchies, third-party file integration.
+- [Data Extraction](https://www.siepe.com/solutions/data-extraction/): extraction of data from unstructured lender and agent-bank documents.
+- [Operations & Accounting](https://www.siepe.com/solutions/operations-accounting/): fund accounting and operational workflow.
+- [Compliance & Legal](https://www.siepe.com/solutions/compliance-legal/): CLO and fund compliance testing.
+- [Middle Office Services](https://www.siepe.com/solutions/middle-office-services/): outsourced middle-office and settlement.
+- [Collateral Administration](https://www.siepe.com/collateral-administration/): CLO collateral administration services.
+- [Managed Technology Services](https://www.siepe.com/solutions/managed-technology-services/): public-cloud managed IT for asset managers.
+
+## Company
+
+- [About Siepe](https://www.siepe.com/company/about-us/)
+- [Contact / request a demo](https://www.siepe.com/contact/)
+- [Careers](https://www.siepe.com/company/careers/)
+- [Press](https://www.siepe.com/company/company-press/)
+- [Case studies](https://www.siepe.com/case-studies/)
+- [Insights](https://www.siepe.com/insights/)
+- [Blog](https://www.siepe.com/category/blog/)
+- [GitHub organization](https://github.com/Siepe): 7 public repositories, all forks of third-party .NET/JavaScript libraries (ClosedXML, Datejs, Excel IntelliSense, textcomplete), most recent push 2020. No first-party SDK, client library, or published package on npm, PyPI, NuGet, Maven Central, RubyGems, crates.io or pkg.go.dev.
+
+## Security and compliance
+
+- [SOC 2 Type II certification](https://www.siepe.com/siepe-achieves-soc-2-type-ii-certification/): report completed January 2021, announced 2021-02-02, covering security, availability, confidentiality and privacy against the AICPA Trust Services Criteria. No current-period report, bridge letter, or trust center is published.
+- No `security.txt`, no published vulnerability-disclosure policy, and no bug-bounty program were found.
+- `siepe.com` publishes SPF and DMARC (`p=none`); DNSSEC and CAA are absent; `www.siepe.com` serves TLS 1.3 without HSTS.
+
+## Commercial
+
+- No public pricing or plans. Engagements are enterprise, sales-negotiated software and managed-service contracts.
+- [Terms of use](https://www.siepe.com/terms-of-use-2022-1)
+- [Privacy policy](https://www.siepe.com/privacy-policy/)
+
+## Optional
+
+- [Siepe and Octaura launch OMS integration](https://www.siepe.com/siepe-and-octaura-launch-integration-to-streamline-syndicated-loan-and-clo-trading/)
+- [Siepe raises $30M Series B led by WestCap](https://www.siepe.com/siepe-raises-30-million-to-transform-data-management-in-private-credit-and-clo-markets/)
+
+---
+generated: 2026-08-27
+method: generated
+source: apis.yml + siepe.com public pages and live probes (API Evangelist enrichment pipeline)

@@ -1,0 +1,20 @@
+generated: '2026-08-27'
+method: searched
+source: https://www.siepe.com/
+note: >-
+  No rate limits are documented because no public API is documented. Siepe publishes no developer
+  portal, no API reference, and no machine-readable contract; api.siepe.com, docs.siepe.com,
+  developer.siepe.com and portal.siepe.com do not resolve in DNS. There is therefore no published
+  limit, window, burst, or exhaustion status code to record, and no response headers to capture.
+  This is an honest zero.
+limit_count: 0
+limits: []
+headers: []
+exhaustion_status: null
+evidence:
+- url: https://www.siepe.com/sitemap_index.xml
+  status: 200
+  note: 654 URLs enumerated; no API reference, developer, or rate-limit documentation page.
+- url: https://api.siepe.com/
+  status: NXDOMAIN
+  note: No API host resolves.

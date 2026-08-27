@@ -1,0 +1,23 @@
+generated: '2026-08-27'
+method: searched
+source: https://www.siepe.com/
+note: >-
+  Siepe publishes no pricing, plans, or tiers of any kind. The full sitemap_index.xml was walked
+  (7 child sitemaps, 654 URLs) and contains no /pricing/, /plans/, or /packages/ page. Every
+  commercial call-to-action on the site is "REQUEST A DEMO" or the contact form; engagements are
+  enterprise, sales-negotiated managed-service and software contracts for private credit, CLO and
+  alternative investment managers. This is an honest zero, not an unchecked field.
+plan_count: 0
+pricing_model: enterprise-sales
+public_pricing: false
+plans: []
+contact:
+  url: https://www.siepe.com/contact/
+  http_status: 200
+evidence:
+- url: https://www.siepe.com/sitemap_index.xml
+  status: 200
+  note: 654 URLs enumerated; no pricing or plans page present.
+- url: https://www.siepe.com/
+  status: 200
+  note: Primary CTA is "REQUEST A DEMO"; no price, tier, or quota published anywhere.

@@ -1,0 +1,56 @@
+generated: '2026-08-27'
+method: searched
+source: https://www.siepe.com/siepe-achieves-soc-2-type-ii-certification/
+note: >-
+  Siepe publishes no machine-readable API contract, so nothing here is derived from a spec.
+  Every row below is a compliance or standards claim read from Siepe's own public pages, with
+  the URL that states it. Rows marked conforms:false are recorded as honestly-absent, not as
+  failures — Siepe simply does not publish evidence for them.
+certifications:
+- id: soc2-type-ii
+  name: SOC 2 Type II
+  conforms: true
+  scope: Trust Services Principles and Criteria — security, availability, confidentiality, privacy
+  auditor: not named in the announcement
+  reported: '2021-01'
+  announced: '2021-02-02'
+  evidence:
+    url: https://www.siepe.com/siepe-achieves-soc-2-type-ii-certification/
+    http_status: 200
+    quote: >-
+      Siepe, a trusted provider of technology, data and analytics, has achieved Service
+      Organization Control ("SOC 2"), Type II certification.
+    note: >-
+      Most recent SOC 2 attestation Siepe publishes publicly is the January 2021 report. No
+      current-period report, bridge letter, or trust center is published, so recency cannot be
+      verified from the public surface.
+standards:
+- id: iso-27001
+  conforms: false
+  evidence: No ISO 27001 claim found on siepe.com (sitemap_index.xml walked, 654 URLs).
+- id: pci-dss
+  conforms: false
+  evidence: Not applicable and not claimed — Siepe is not a card acquirer.
+- id: oauth2
+  conforms: false
+  evidence: >-
+    No public OAuth surface. /.well-known/oauth-authorization-server and
+    /.well-known/openid-configuration both 404 on www.siepe.com.
+- id: oidc
+  conforms: false
+  evidence: /.well-known/openid-configuration returned 404 on www.siepe.com.
+- id: rfc9457
+  conforms: false
+  evidence: No public API contract published, so no error envelope to assess.
+domain_standards:
+  note: >-
+    REWARD-ONLY and honestly empty. Siepe operates in syndicated loans, CLOs and private credit,
+    where the relevant domain standards would be LSTA/LMA loan-trading documentation, FpML, or
+    ISO 20022. Siepe's own Octaura Order Management System integration announcement
+    (2026-05-05) describes straight-through order routing and trade booking but names no wire
+    standard, and no Siepe-published contract declares one. Nothing is asserted here that the
+    provider does not state.
+  declared: []
+  evidence:
+    url: https://www.siepe.com/siepe-and-octaura-launch-integration-to-streamline-syndicated-loan-and-clo-trading/
+    http_status: 200

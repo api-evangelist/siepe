@@ -1,0 +1,38 @@
+generated: '2026-08-27'
+method: probed
+source: live HTTP probes of every Siepe host reachable without credentials
+note: >-
+  Every /.well-known/ path probed on www.siepe.com and siepe.com returned 404. No WellKnown or
+  SecurityTxt pointer is emitted in apis.yml, because nothing was served — this file records a
+  verified absence, not a presence. The apex and www hosts return a bare Apache 404
+  (text/html; charset=iso-8859-1, 196 bytes) for /.well-known/* and a 42KB WordPress themed 404
+  for ordinary paths, so neither is a soft-200 catch-all: the absences are real.
+hosts:
+- host: www.siepe.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+- host: siepe.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
