@@ -10,6 +10,17 @@ description: 'Siepe is a Dallas, Texas fintech providing cloud-based software an
   public developer program: connectivity is delivered as bilateral, managed integrations (for
   example its 2026 Order Management System integration with Octaura for syndicated loan and CLO
   trading) rather than as a self-serve, documented public API.'
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 image: https://www.siepe.com/wp-content/uploads/2020/08/Siepe-Logo.png
 url: https://raw.githubusercontent.com/api-evangelist/siepe/refs/heads/main/apis.yml
 x-type: company
