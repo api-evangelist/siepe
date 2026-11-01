@@ -64,5 +64,96 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Siepe is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://www.nasdaqprivatemarket.com/
+Siepe is a Dallas, Texas fintech providing cloud-based software and technology-enabled services for private credit, CLO and alternative investment managers. Its front-to-back platform spans portfolio management, operations and accounting, collateral administration, compliance and legal, middle-office services, data extraction and a centralized data-management warehouse that normalizes borrower, lender, agent-bank and investor feeds into one real-time view. Siepe also operates managed technology and public-cloud services for asset managers. The company raised a $30M Series B led by WestCap in 2024 and holds SOC 2 Type II certification. Siepe publishes no public developer program: connectivity is delivered as bilateral, managed integrations (for example its 2026 Order Management System integration with Octaura for syndicated loan and CLO trading) rather than as a self-serve, documented public API.
+
+**Areas:** Company · Financial Services · Private Credit · CLO · Alternative Investments · Portfolio Management · Data Management · Fund Administration · Middle Office · Managed Service · Fintech
+
+## Siepe on APIs.io
+
+Everything profiled for Siepe is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/siepe/](https://apis.io/providers/siepe/)** — or go straight to one of the APIs or properties below.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Siepe Domain Security](https://apis.io/security/siepe/siepe-domain-security/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Siepe Plans Pricing](https://apis.io/plans/siepe/siepe-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Siepe Rate Limits](https://apis.io/rate-limits/siepe/siepe-rate-limits/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.siepe.com/)
+- [Support](https://www.siepe.com/contact/)
+- [Blog](https://www.siepe.com/category/blog/)
+- [Terms of service](https://www.siepe.com/terms-of-use-2022-1)
+- [Privacy policy](https://www.siepe.com/privacy-policy/)
+- [GitHub](https://github.com/Siepe)
+
+## API Evangelist rating
+
+**Kin Score 14.4** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 56.3 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 2.6 |
+| Developer ergonomics | 7.1 |
+| Access clarity | 28.9 |
+
+**Agent readiness 2.5** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | documented (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 23.5** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/siepe/](https://apis.io/providers/siepe/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Siepe: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/siepe/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
